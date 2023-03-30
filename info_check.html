@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    
+    <title>예약 확인 폼</title>
+
+    <!-- custon css link -->
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/section8.css">
+
+    <style>
+        .form-wrap1 input { width: 100%;}
+    </style>
+    
+
+
+</head>
+<body>
+
+    <section class="section section9" id="section9">
+        <div class="wrap s9-wrap">
+
+
+                <form action="php/info_search.php" method="post">
+                    <h2>예약 확인</h2>
+                    <div class="form-wrap">
+
+                        <div class="form-wrap1">
+
+                            <input type="text" class="name" id="name" name="name" placeholder="이름" required>
+
+                        </div>
+
+
+                        <div class="form-wrap2">
+                            <input type="text" class="tel1" id="tel1" name="tel1" value="010" readonly>
+                            <input type="text" class="tel2" id="tel2" name="tel2" placeholder="'-'없이 숫자만 적어주세요."  
+                            onkeypress='return event.charCode >= 48 && event.charCode <= 57' maxlength="8" required> 
+                        </div>
+
+                        <button type="submit" id="form-btn">조회</button>
+                    </div>
+                </form>
+
+        </div>
+     </section>
+
+
+</body>
+</html>

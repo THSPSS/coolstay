@@ -1,0 +1,130 @@
+/*==기본폰트설정 
+    font-family: 'Pretendard';
+    font-weight: 700;
+으로 해뒀음. ==*/
+
+/* 꿀스테이는 꿈이 아닌 현실을 제시합니다.*/
+.section3-title-pc {
+    font-size: 45px;
+    padding-top: 13.4021vh; /* 130px */
+    margin-left: 4.1666%; /* 50px*/
+}
+
+.section3-title-m {
+    display: none;
+}
+
+/* 제목 이하 컨텐츠들 */
+/* 그래프 이미지 */
+.s3-c-img {
+    width: 989px; /* 얜 고정하는게 예쁜듯*/
+    height: 424px;
+    background-image: url(../images/section3.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin: 14.2268vh auto 0 auto; /*138px 114px 0 222px;*/
+}
+
+.s3-c-txt-wrap {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1089px ;
+    height: 70px;
+    margin: 60px auto 0 auto; 
+}
+
+.s3-c-txt {
+    height:70px;
+    border: 1px solid #F4F4F4;
+    border-radius: 25px;
+    box-shadow: 8px 8px 20px rgba(65, 65, 65, 0.15);
+    font-size: 20px;
+    line-height: 70px;
+    text-align: center;
+}
+
+.s3-c-txt span {
+    font-size: 26px;
+}
+
+.s3-c-txt1 {
+    width: 210px;
+}
+
+.s3-c-txt1 span {
+    color : #EF3636; /* 폰트사이즈 확인불가 */
+}
+
+.s3-c-txt2 {
+    width: 238px;
+}
+
+.s3-c-txt2 span:first-child {
+    color : #FECC0F;
+}
+
+.s3-c-txt3 {
+    width: 272px;
+}
+
+.s3-c-txt4 {
+    width: 249px;
+}
+
+/*=========================*/
+@media (min-width: 768px) and (max-width: 1023px)  {
+    .section3-title-pc {
+        font-size: 35px;
+        padding-top: 150px;
+        margin-left: 7.8125%; /* 60px*/
+    }
+    .s3-c-img {
+        width: 582px; /* 얜 고정하는게 예쁜듯*/
+        height: 284px;
+        background-image: url(../images/section3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        margin: 70px auto 0 auto; 
+    }
+
+    .s3-c-txt-wrap {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;        
+        max-width: 574px ;
+        height: 165px;
+        margin: 60px  auto 0 auto; 
+    }
+    
+}
+
+@media  (max-width:767px) {
+    .section3-title-pc {
+        display: none;
+    }
+    .section3-title-m {
+        display: block;
+        font-size: 25px;
+        padding-top: 110px;
+        margin-left: 40px; 
+    }
+    .s3-c-img {
+        width: 359px; /* 얜 고정하는게 예쁜듯*/
+        height: 172px;
+        margin: 64px auto 0 auto; 
+    }
+    .s3-c-txt-wrap {
+        display: flex;
+        flex-direction: column-reverse;
+        flex-wrap: wrap;        
+        max-width: 249px ;
+        height: 340px;
+        margin: 58px auto 0 auto ;
+    }
+    .s3-c-txt1,
+    .s3-c-txt2,
+    .s3-c-txt3,
+    .s3-c-txt4 {
+        width: 249px;
+    }
+} 

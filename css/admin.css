@@ -1,0 +1,54 @@
+#admin_box {
+  max-width: 1000px;
+  margin: auto;
+}
+#admin_box .admin-title {
+  -webkit-padding-before: 20px;
+          padding-block-start: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+#admin_box #member_list {
+  -webkit-padding-start: 0px;
+          padding-inline-start: 0px;
+  -webkit-padding-after: 20px;
+          padding-block-end: 20px;
+}
+#admin_box #member_list li:first-child {
+  list-style: none;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(8, 1fr);
+  padding-block: 1rem;
+  background-color: rgb(182, 182, 182);
+  color: #000;
+}
+#admin_box #member_list li:not(first-child) form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-template-columns: repeat(8, 1fr);
+  padding-block: 1rem;
+}
+#admin_box .admin-management .management-list li:first-child {
+  display: grid;
+  text-align: center;
+  padding-block: 1rem;
+  background-color: rgb(182, 182, 182);
+  grid-template-columns: repeat(3, 1fr);
+}
+#admin_box .admin-management .management-list li:not(first-child) form {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(3, 1fr);
+  padding-block: 1rem;
+  text-align: center;
+}
+#admin_box .admin-management .management-list li:not(first-child) form .col3 {
+  display: flex;
+  justify-content: center;
+}/*# sourceMappingURL=admin.css.map */

@@ -1,0 +1,135 @@
+/*헤더영역*/
+.header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 70px;
+    background-color: #fff;
+    transition: 0.2s;
+    box-shadow: 0px 2px 3px rgba(167, 167, 167, 0.25);
+}
+
+.header-wrap {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    max-width: 1200px;
+    height: 70px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.header-wrap>a {
+    width: 93px;
+}
+
+#gnb {
+    /* margin-left: 52%;*/ /*624px */
+    /* text-align: right; */
+    width: 322px;
+    display: flex;
+
+    margin-right: 3px; /* 3px */
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 70px;
+}
+
+#gnb>a {
+    display: inline-block;
+    padding-right: 1.25%; /*15px*/
+}
+
+#gnb>a:last-child {
+    padding-right: 0;
+}
+
+#gnb>a.active {
+    color: #ea1e53;
+}
+
+/*첫번째 페이지에만 헤더 디자인 변경*/
+.fp-viewing-sec1 .header {
+    background-color: transparent;
+    padding: 0;
+    color: rgb(0, 0, 0);
+    box-shadow: 0px 0px 0px;
+}
+.fp-viewing-sec1 #gnb {
+    display: none;
+}
+
+.header-logo {
+    width: 93px;
+    height: 30px;
+    background: url(../images/header_logo.png);
+    background-size:cover;
+}
+
+.gnb-apple {
+    width: 107px;
+    height: 37px;
+    background: url(../images/header-gnb-apple-pc.svg);
+    background-size:cover;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.gnb-android {
+    width: 107px;
+    height: 36px;
+    background: url(../images/header-gnb-and-pc.svg);
+    background-size:cover;
+    border: 1px solid #000;
+    border-radius: 10px;
+}
+
+.gnb-book {
+    width: 92px;
+    height: 36px;
+    background-color: #FFC904;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*===================*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    .header-logo {
+        margin-left: 41px;
+    }
+}
+
+@media (max-width: 767px) {
+    #gnb {
+        width: 124px;
+    }
+    .header-logo {
+        width: 78px;
+        height: 25px;
+        top: 22px;
+        margin-left: 22px;
+    }
+    .gnb-apple {
+        width: 36px;
+        height: 36px;
+        background-image: url(../images/apple_m.png);
+        background-size:cover;
+    }
+    .gnb-android {
+        width: 36px;
+        height: 36px;
+        background-image: url(../images/and_m.png);
+        background-size:cover;
+    }
+    .gnb-book {
+        width: 36px;
+        height: 36px;
+        background: url(../images/header-3.svg);
+    }
+    .gnb-book span {
+        display: none;
+    }
+}

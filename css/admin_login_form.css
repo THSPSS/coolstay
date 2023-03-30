@@ -1,0 +1,46 @@
+@import url("https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css");
+body {
+  background-color: #f1f5f9;
+}
+body .login .container {
+  height: 100vh;
+  display: grid;
+  justify-content: center; /*horizontal*/
+  align-content: center; /*vertical*/
+}
+body .login .container .login-wrapper {
+  width: 400px;
+  padding-inline: 20px;
+  padding-block: 24px;
+  background-color: white;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+body .login .container .login-wrapper .login-title {
+  text-align: center;
+}
+body .login .container .login-wrapper .input-wrapper {
+  padding-block: 6px;
+  position: relative;
+}
+body .login .container .login-wrapper .input-wrapper .input-wrapper:last-child {
+  -webkit-padding-before: 16px;
+          padding-block-start: 16px;
+}
+body .login .container .login-wrapper .input-wrapper input {
+  padding-inline: 30px;
+  -webkit-margin-before: 6px;
+          margin-block-start: 6px;
+  text-align: left;
+  font-size: 14px;
+}
+body .login .container .login-wrapper .input-wrapper i {
+  position: absolute;
+  top: 44px;
+  left: 8px;
+  transform: translateY(-50%);
+}
+body .login .container .login-wrapper .form-btn {
+  width: 100%;
+  -webkit-padding-before: 6px;
+          padding-block-start: 6px;
+}/*# sourceMappingURL=admin_login_form.css.map */

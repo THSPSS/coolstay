@@ -1,0 +1,66 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+
+body {
+    background-color: #f1f5f9;
+
+    .login {
+
+        .container {
+            height: 100vh;
+            display: grid;
+            justify-content: center; /*horizontal*/
+            align-content: center; /*vertical*/
+    
+    
+            .login-wrapper {
+                width: 400px;
+                padding-inline: 20px;
+                padding-block: 24px;
+                background-color: white;
+                box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+                0 4px 6px -2px rgba(0, 0, 0, 0.05);;
+        
+                .login-title { text-align: center;}
+        
+                .input-wrapper{
+                    padding-block: 6px;
+                    position: relative;
+    
+                    .input-wrapper:last-child {
+                        padding-block-start: 16px;
+                    }
+    
+                    input { 
+                        padding-inline: 30px;
+                        margin-block-start: 6px;
+                        text-align: left;
+                        font-size: 14px;
+                    }
+        
+                    i {
+                        position: absolute;
+                        top: 44px;
+                        left: 8px;
+                        transform: translateY(-50%);
+                    }
+                }
+    
+    
+    
+                .form-btn {
+                    width: 100%;
+                    padding-block-start: 6px;
+                }
+            }
+        }
+    
+    
+    
+    
+    }
+
+
+}
+
+
+

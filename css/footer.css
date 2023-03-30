@@ -1,0 +1,117 @@
+/*푸터영역*/
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    padding: 20px 0 0 0;
+    background-color: #303030;
+    transform: translateY(100%);
+    transition: 0.7s;
+    color: #fff;
+}
+
+.fp-viewing-sec8 .footer {
+    transform: translateY(0);
+}
+
+.footer-wrap{
+  display: flex !important;
+  justify-content: space-between;
+}
+
+.footer-wrap-L {
+  display: flex;
+  gap: 50px;
+}
+
+.footer-t {
+    display: flex;
+    margin-top: 2px;
+}
+
+.footer-t img{
+    width: 47px;
+    height: 47px;
+}
+
+.footer-t-text {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-t-text svg {
+  width: 117px;
+  height: 35px;
+  fill: white;
+}
+ 
+.footer-t div p:nth-child(1) {
+  font-size: 10px;
+  margin-left: 8px;
+}
+
+.footer-b {
+  margin-top: -4px;
+  display: flex;
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.footer-b > .footer-b-text > span{
+  font-size: 14px;
+  font-family: 'Nanumsqaure';
+  font-weight: 400;
+  display: block;
+}
+
+.footer-b > .footer-b-text > span > div{
+  display: flex;
+  width: 350px;
+  justify-content: space-between;
+}
+
+.footer-b-ico {
+  width: 114px;
+}
+
+.footer-b-ico > span{
+  display: flex;
+  justify-content: flex-end;
+  width: 114px;
+}
+ 
+
+.footer-b-ico > span > a > svg{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  margin-left: 12px;
+}
+
+@media (min-width: 1024px) and (max-width:1200px){
+
+}
+
+
+
+@media (min-width:768px) and (max-width:1023px){
+  
+}
+
+
+@media (max-width:767px){
+  .footer {
+    height: 150px;
+    padding: 16px 0 0 16px;
+  }
+  .footer-wrap-L {
+    flex-direction: column;
+    gap : 10px;
+    
+  }
+
+
+}

@@ -1,0 +1,166 @@
+/*==기본폰트설정 
+    font-family: 'Pretendard';
+    font-weight: 700;
+으로 해뒀음. ==*/
+
+.section6 {
+    background-color: #F8F8F8;
+}
+/* 꿀스테이는 이렇게 홍보해 드립니다. */
+.s6-wrap > h2 {
+    font-size: 45px;
+    padding-top: 13.4021vh; /* 130px*/
+    margin-left: 4%; /* 1200px기준 48px */
+}
+
+/* 제목 이하 켄텐츠들 */
+.s6-contents-wrap {
+    max-width: 997px;
+    height: 599px;
+    margin-top: 5.9794vh; /* 83px */ /* 제목과의 마진*/
+    display: flex; /* 컨텐츠1,2 사이 거리  */
+    flex-direction: column; /* 컨텐츠1,2 사이 거리  */
+    gap: 62px; /* 컨텐츠1,2 사이 거리  */
+    margin-left: 4.1666%; /* 1200px기준 50px */
+}   
+
+/* 컨텐츠1 */
+.s6-c1-wrap {
+    display: flex; /* txt랑 이미지 가로정렬 */
+    justify-content: space-between; 
+}
+
+.s6-c1-txt-wrap {
+    display: flex; /* txt들 세로정렬  */
+    flex-direction: column;
+    gap: 3.0928vh; /* 30px */
+}
+/* 꿀혜택 기능 */
+.s6-c1-txt-wrap h3 {
+    font-size: 40px;
+}
+
+.s6-c1-txt-wrap p {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.s6-c1-img {
+    background-image: url(../images/section7-img1.png); 
+    background-size: cover;
+    width: 263px;
+    height: 270px;
+    border-radius: 50%;
+}
+
+/* 컨텐츠2 */
+.s6-c2-wrap {
+    display: flex; /* txt랑 이미지 가로정렬하려고 */
+    justify-content: space-between;
+}
+
+.s6-c2-txt-wrap {
+    display: flex; /* txt들 세로정렬 하려고 */
+    flex-direction: column;
+    gap: 3.0928vh; /* 30px */
+}
+
+/* 내 주변 기능 */
+.s6-c2-txt-wrap h3 {
+    font-size: 40px;
+}
+
+.s6-c2-txt-wrap p {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.s6-c2-img {
+    background-image: url(../images/section7-img2.jpg);
+    background-size: cover;
+    width: 263px;
+    height: 270px;
+    border-radius: 50%;
+}
+
+/*===========================*/
+@media (min-width: 768px) and (max-width: 1023px) {
+    /* 꿀스테이는 이렇게 홍보해 드립니다. */
+    .s6-wrap > h2 {
+        font-size: 35px;
+        padding-top: 150px;
+        margin-left: 7.8125%; /* 768px기준 60px */
+    }
+
+    /* 제목 이하 켄텐츠들 */
+    .s6-contents-wrap {
+        max-width: 572px;
+        height: 408px;
+        margin-top: 150px; /* 제목과의 거리 */
+        display: flex; /* 컨텐츠1,2 사이 거리  */
+        flex-direction: column-reverse; /* 컨텐츠1,2 사이 거리  */
+        gap: 60px; /* 컨텐츠1,2 사이 거리  */
+        justify-content: space-between;
+        margin-left: 10.4166%; /* 768px기준 80px */
+    }   
+
+    .s6-c1-img,
+    .s6-c2-img {
+        display: none;
+    }
+
+    .s6-c1-txt-wrap {
+        display: flex; /* txt들 세로정렬  */
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .s6-c1-txt-wrap h3,
+    .s6-c2-txt-wrap h3 {
+        font-size: 30px;
+    }
+
+    .s6-c1-txt-wrap p,
+    .s6-c2-txt-wrap p {
+        font-size: 22px;
+    }
+}
+@media (max-width: 767px) {
+    /* 꿀스테이는 이렇게 홍보해 드립니다. */
+    .s6-wrap > h2 {
+        font-size: 25px;
+        padding-top: 110px;
+        margin-left: 4.6728%; /* 428px기준 20px */
+    }
+
+    /* 제목 이하 켄텐츠들 */
+    .s6-contents-wrap {
+        max-width: 455px;
+        height: 399px;
+        gap: 100px; /* 컨텐츠1,2 사이 거리  */
+        margin-top: 100px; /* 제목과의 거리 */
+        margin-left: 4.6728%; /* 428px기준 20px */
+        margin-right: 4.6728%; /* 428px기준 20px */
+    }   
+
+    .s6-c1-img,
+    .s6-c2-img {
+        display: none;
+    }
+
+    .s6-c1-txt-wrap {
+        display: flex; /* txt들 세로정렬  */
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .s6-c1-txt-wrap h3,
+    .s6-c2-txt-wrap h3 {
+        font-size: 23px;
+    }
+
+    .s6-c1-txt-wrap p,
+    .s6-c2-txt-wrap p {
+        font-size: 20px;
+    }
+}

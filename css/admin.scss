@@ -1,0 +1,66 @@
+#admin_box {
+    max-width: 1000px;
+    margin: auto;
+
+    .admin-title {
+        padding-block-start: 20px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #member_list {
+        padding-inline-start: 0px;
+        padding-block-end: 20px;
+
+
+        li:first-child {
+            list-style: none;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-template-columns: repeat(8,1fr);
+            padding-block: 1rem;
+            background-color: rgb(182, 182, 182);
+            color: #000;
+        }
+
+        li:not(first-child) form{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            grid-template-columns: repeat(8,1fr);
+            padding-block: 1rem;
+        }
+}
+
+.admin-management {
+    .management-list {
+
+        li:first-child{
+            display: grid;
+            text-align: center;
+            padding-block: 1rem;
+            background-color: rgb(182, 182, 182);
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        li:not(first-child) form {
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            grid-template-columns: repeat(3,1fr);
+            padding-block: 1rem;
+            text-align: center;
+
+            .col3 {
+                display: flex;
+                justify-content: center;
+            }
+        }
+
+
+    }
+}
+}

@@ -1,0 +1,127 @@
+/*!
+ * fullPage 2.9.4
+ * https://github.com/alvarotrigo/fullPage.js
+ * MIT licensed
+ *
+ * Copyright (C) 2013 alvarotrigo.com - A project by Alvaro Trigo
+ */
+html.fp-enabled,
+.fp-enabled body {
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+
+    /*Avoid flicker on slides transitions for mobile phones #336 */
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+
+.fp-section {
+    position: relative;
+    -webkit-box-sizing: border-box; /* Safari<=5 Android<=3 */
+    -moz-box-sizing: border-box; /* <=28 */
+    box-sizing: border-box;
+}
+
+.fp-section.fp-table  {
+    /* display: table;
+    table-layout:fixed; */
+    width: 100%;
+    /* border: 1px solid rgb(0, 255, 21); */
+}
+ 
+.fp-tableCell {
+    /* display: table-cell; */
+    max-width: 1200px; /* 1200px */
+    /*height: 100vh;*/
+    /* border: 1px solid blue; */
+    margin: auto;
+}
+
+#fp-nav {
+    position: fixed;
+    z-index: 100;
+    margin-top: -32px;
+    top: 50%;
+    opacity: 1;
+    -webkit-transform: translate3d(0,0,0);
+}
+
+#fp-nav.right {
+    right: 17px;
+}
+
+#fp-nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+#fp-nav ul li {
+    display: block;
+    width: 14px;
+    height: 13px;
+    margin: 7px;
+    position:relative;
+}
+
+
+#fp-nav ul li a {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+/*== 페이지네이션 active dot ==*/
+#fp-nav ul li a.active span,
+#fp-nav ul li:hover a.active span {
+    height: 12px;
+    width: 12px;
+    margin: -6px 0 0 -6px;
+    border-radius: 100%;
+    background: #FECC0F; /* 색상변경해야함 */
+}
+
+.fp-viewing-sec4 #fp-nav ul li a.active span,
+.fp-viewing-sec5 #fp-nav ul li a.active span,
+.fp-viewing-sec7 #fp-nav ul li a.active span {
+    background: #707070; /* 색상변경해야함 */
+}
+
+/*==페이지네이션 일반 dot ==*/
+#fp-nav ul li a span {
+    border-radius: 50%;
+    position: absolute;
+    z-index: 1;
+    height: 4px;
+    width: 4px;
+    border: 0;
+    background: rgba(0, 0, 0, 0.5); /* 색상변경해야함 */
+    left: 50%;
+    top: 50%;
+    margin: -2px 0 0 -2px;
+    -webkit-transition: all 0.1s ease-in-out;
+    -moz-transition: all 0.1s ease-in-out;
+    -o-transition: all 0.1s ease-in-out;
+    transition: all 0.1s ease-in-out;
+}
+
+/*==페이지네이션 hover dot ==*/
+#fp-nav ul li:hover a span {
+    width: 12px;
+    height: 12px;
+    margin: -6px 0px 0px -6px;
+    background: #303030; /* 색상변경해야함 */
+}
+
+.fp-auto-height.fp-section,
+.fp-auto-height .fp-tableCell{
+    height: auto !important;
+}
+
+.fp-responsive .fp-auto-height-responsive.fp-section,
+.fp-responsive .fp-auto-height-responsive .fp-tableCell {
+    height: auto !important;
+}

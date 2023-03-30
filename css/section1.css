@@ -1,0 +1,161 @@
+.section1 {
+    background-image: url("../images/section1_bg.jpg");
+    background-size: cover;
+    height: 100vh !important;
+}
+
+.s1-contents-wrap {
+    padding-top: 31.9588vh; /* 310px */
+    font-family:'Noto Sans KR', sans-serif;
+}
+
+.s1-title1-pc {
+    width: 100%; /*856px*/ 
+    font-size: 30px;
+    font-weight: 400;
+    color:white;
+}
+
+.s1-title1-tab {
+    display: none;
+}
+
+.s1-title2-pc {
+    width: 100%; /*1016px*/
+    margin-top: 1.5464vh; /*1.5464vh ,15px*/
+    font-size: 50px;
+    color:white;
+}
+
+.s1-title2-tab {
+    display: none;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+  
+a:hover {
+    color: #ea1e53;
+}
+
+.s1-btn {
+    display: block;
+    width: 367px;
+    height: 85px; 
+    margin-top: 120px;
+    border-radius: 20px;
+    line-height: 85px; 
+    background: #ffffff;
+    text-align: center;
+    
+}
+
+.s1-btn-txt {
+    font-family: 'NanumSquare', sans-serif;
+    font-size: 35px;
+    color: #000000;
+    cursor: pointer;
+    z-index: 99999;
+}
+
+/*==================================================*/
+@media (max-width: 1024px) {
+    .section1{
+        background-position: center; 
+    }
+} 
+@media (max-width: 1010px) { 
+    .s1-title2-pc {
+        display: none;
+    }
+    .s1-title2-tab {
+        display: block;
+        width: 100%; /*1016px*/
+        margin-top: 1.5464vh; /* 1.5464vh 15px */
+        font-size: 50px;
+        color:white;
+    }
+} 
+
+/* 태블릿모드 */
+@media (min-width: 768px) and (max-width: 1023px) { 
+    .s1-contents-wrap {
+        padding-top: 29.3814vh; /*285px*/
+    }
+    .s1-title1-pc {
+        display: none;
+    }
+
+    .s1-title1-tab {
+        display: block;
+        font-size: 30px;
+        font-weight: 400;
+        margin-left: 5.3385%; /*41px*/
+        color:white;
+    }
+    .s1-title2-tab{
+        display: block;
+        font-size: 35px;
+        width: 1016px;
+        margin-top: 0; 
+        margin-left: 5.2083%; /*40px*/
+        color:white;
+    } 
+    .s1-title2-pc {
+        display: none;
+    }
+
+    .s1-title2-tab {
+       margin-top: 1.5464vh; /* 15px */
+    }
+
+    .s1-btn {
+        margin-top: 19.7938vh; /* 192px */
+        margin-left: 5.5989%; /* 43px */
+        width: 306px; 
+        height: 70px; 
+        line-height: 70px;
+    }
+}
+
+/* 모바일모드 */
+@media (max-width:767px) { /* 428x926 */
+    .s1-contents-wrap {
+        padding-top: 32.2894vh; /* 299px */
+    }
+    .s1-title1-pc {
+        display: none;
+    }
+    .s1-title1-tab {
+        display: block;
+        top: 299px; 
+        font-size: 18px;
+        margin-left: 4.6728%; /* 20px */
+        color: white;
+        font-weight: 400;
+     }
+    .s1-title2-tab { /* 앞으로 착한 숙박앱~ */
+        font-family:'Noto Sans', sans-serif;
+        font-size: 21px;
+        color:white;
+        top:11.8790vh;  /* 110px */
+        margin-left: 4.6728%; /* 20px */
+    } 
+    .s1-c-txt1 {
+        margin-top: 0.8639vh; /* 8px */
+    }
+    .s1-btn {
+        margin-top: 105px; 
+        margin-left: 4.6728%; /* 20px */
+        width: 253px;
+        height: 59px; 
+        line-height: 59px; 
+    }
+    .s1-btn-txt {
+       font-size: 22px;
+    }
+}
+ 
+

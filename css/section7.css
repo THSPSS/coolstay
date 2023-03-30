@@ -1,0 +1,401 @@
+/*==기본폰트설정 
+    font-family: 'Pretendard';
+    font-weight: 700;
+으로 해뒀음. ==*/
+.section7 {
+    background-color: #FECC0F;
+
+}
+.section7 span {
+    color: #C90303;
+}
+.s7-title-pc {
+    font-size: 45px;
+    padding-top: 13.4021vh; /* 130px */
+    margin-left: 50px; /* 50px */
+}
+.s7-title-m {
+    display: none;
+}
+/* 제목이하 컨텐츠들 */
+
+.s7-contents-wrap{
+    display: flex;
+    flex-direction: column; /* 카드 윗줄 아랫줄 세로정렬 */
+    gap: 3.0928vh; /* 60px */ /* 카드 윗줄 아랫줄 간격 */
+    max-width: 1090px;
+    height: 560px;
+    margin: 8.2474vh 0 0 4.1666%; /*80 0 0 50*/ 
+    
+}
+
+.s7-contents-wrap-top, 
+.s7-contents-wrap-btm {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card-wrap,
+.card-front,
+.card-back {
+    height: 250px;
+    border-radius: 20px;
+}
+
+.card-wrap {
+    width: 498px;
+    perspective: 1000px;
+}
+
+.card-front {
+    width: 100%;
+    display: flex; /*이미지랑 글씨 가로정렬*/
+    background-color: #f8f8f8;
+    margin: auto 0;
+    box-shadow: 4px 4px 10px rgba(48, 48, 48, 0.25);
+}
+
+.card-back {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    top:0;
+    font-size: 26px;
+    opacity: 0; 
+    background-color: #f8f8f8;
+    box-shadow: 4px 4px 10px rgba(48, 48, 48, 0.25);
+}
+
+/* 카드 앞면 */
+.s7-c1-front-img {
+    width: 80px;
+    height: 80px;
+    background-image: url(../images/section8-img1.png);
+    background-size: cover;
+    margin: 85px 0 0 26px;
+}
+
+.s7-c1-front-title-pc { 
+    font-size: 30px;
+    margin: auto 0 auto 12px;
+}
+
+.s7-c1-front-title-tab {
+    display: none;
+}
+
+
+.s7-c2-front-img {
+    width: 95px;
+    height: 95px;
+    background-image: url(../images/section8-img2.png);
+    background-size: cover;
+    margin: auto 0 auto 44px;
+}
+
+.s7-c2-front h3 { 
+    font-size: 32px;
+    margin: auto 0 auto 12px;
+}
+
+.s7-c3-front-img {
+    width: 90px;
+    height: 90px;
+    background-image: url(../images/section8-img3.png);
+    background-size: cover;
+    margin: auto 0 auto 34px;
+}
+
+.s7-c3-front h3 { 
+    font-size: 32px;
+    margin: auto 0 auto 32px;
+}
+
+.s7-c4-front-img {
+    width: 85px;
+    height: 85px;
+    background-image: url(../images/section8-img4.png);
+    background-size: cover;
+    margin: auto 0 auto 40px;
+}
+
+.s7-c4-front h3 { 
+    font-size: 32px;
+    margin: auto 0 auto 16px;
+}
+
+/* 카드 뒷면 */
+.s7-c1-b-txt-wrap {
+    max-width: 368px;
+    margin-left: 45px ;
+    margin-top: 49px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+}
+
+.s7-c1-b-txt {
+    display: flex;
+    justify-content: space-between;
+}
+
+.small-txt {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.small-txt-btm {
+    margin-top: 15px;
+    float: right;
+    margin-right: 6.0240%; /*30px*/
+}
+
+.s7-c2-back p { 
+    text-align: center;
+    margin-top: 94px;
+}
+
+.s7-c3-back p { 
+    text-align: center;
+    margin-top: 79px;
+}
+
+.s7-c4-back p { 
+    text-align: center;
+    margin-top: 79px;
+}
+
+.s7-c4-back .small-txt {
+    float:right;
+    margin-top: 6px;
+    margin-right: 9.23694%; /*46px*/
+    font-size: 20px;
+}
+
+
+/* 에니메이션 영역 */
+.card-front,
+.card-back{
+    backface-visibility: hidden;
+    transition: 1s;
+}
+.card-front{
+    position: absolute;
+    transform: rotateY(0deg);
+}
+.card-wrap:hover .card-front{
+    transform: rotateY(-180deg);
+    opacity: 0;
+}
+.card-back{
+    transform: rotateY(180deg);
+}
+.card-wrap:hover .card-back{
+    transform: rotateY(0deg);
+    opacity: 1;
+}
+
+
+  /*==============================*/
+  @media (min-width: 768px) and (max-width: 1023px) {
+    .s7-title-pc {
+        font-size: 35px;
+        padding-top: 15.4639vh; /*150px*/
+        margin-left: 60px;
+    }
+    .s7-contents-wrap { /* 카드 4개 wrap */
+        max-width: 668px;
+        height: 602px;
+        gap: 42px; /* 카드 윗줄 아랫줄 간격 */        
+        margin: 7.4227vh auto 0 auto; /*72px 0 0 60px;*/
+    }
+    .s7-contents-wrap-top,
+    .s7-contents-wrap-btm {
+
+        width: 100%;
+        height: 280px;
+    }
+    .card-wrap { /* 개별 카드 크기 지정 */
+        width: 314px;
+        height: 280px;
+    }
+
+    /*카드 앞면*/
+    .card-front {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        margin: auto 0;
+        text-align: center;
+    }
+
+    /*카드1*/
+    .s7-c1-front-title-pc { 
+        display: none;
+    }
+    
+    .s7-c1-front-title-tab {
+        display: block;
+        font-size: 36px;
+        margin-left: 59px;
+    }
+
+    .s7-c1-front-img {
+        width: 80px;
+        height: 80px;
+        margin: 64px auto 10px auto;
+        text-align: center;
+    }
+    
+    .s7-c1-front h3 { 
+        font-size: 30px;
+        margin: 0 auto;
+    }
+    
+    .s7-c2-front-img {
+        width: 90px;
+        height: 90px;
+        margin: 72px auto 16px auto;
+    }
+    
+    .s7-c2-front h3 { 
+        font-size: 32px;
+        margin: 0 auto;
+    }
+    
+    .s7-c3-front-img {
+        width: 90px;
+        height: 90px;
+        margin: 60px auto 28px auto;
+    }
+    
+    .s7-c3-front h3 { 
+        font-size: 32px;
+        margin: 0 auto;
+    }
+    
+    .s7-c4-front-img {
+        width: 85px;
+        height: 85px;
+        margin: 70px auto 23px auto;
+    }
+    
+    .s7-c4-front h3 { 
+        font-size: 32px;
+        margin: 0 auto;
+    }
+
+    .card-back {
+        display: none;
+    }
+    .card-wrap:hover .card-front {
+        transform: none; 
+        opacity: 1;
+      }
+  }
+  @media (max-width: 767px) {
+    .s7-title-pc {
+        display: none;
+    }
+
+    .s7-title-m {
+        display: block;
+        font-size: 25px;
+        padding-top: 120px; 
+        margin-left: 20px; 
+    }
+   
+    .s7-contents-wrap { /* 카드 4개 wrap */
+        max-width: 386px;
+        height: 574px;
+        gap: 30px;/* 카드 윗줄 아랫줄 간격 */        
+        margin: 40px auto 0 auto; /*40px 0 0 20px;*/
+    }
+    .s7-contents-wrap-top,
+    .s7-contents-wrap-btm {
+        flex-direction: column;
+        width: 100%;
+        height: 272px;
+    }
+    .card-wrap { /* 개별 카드 크기 지정 */
+        width: 386px;
+        height: 121px;
+    }
+
+    /*카드 앞면*/
+    .card-front {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+  
+        
+    }
+
+    /*카드1*/
+    .s7-c1-front-title-pc { 
+        display: none;
+    }
+    
+    .s7-c1-front-title-tab {
+        display: none;
+    }
+    .s7-c1-front-title-pc { /* 모바일버전이랑 모양 같음 */
+        display: block;
+        font-size: 36px;
+        margin-left: 59px;
+    }
+
+    .s7-c1-front-img {
+        width: 65px;
+        height: 65px;
+        margin: auto 24px auto 40px;
+        text-align: center;
+    }
+    
+    .s7-c1-front h3 { 
+        font-size: 20px;
+        margin: auto 0 auto 0;
+    }
+    
+    .s7-c2-front-img {
+        width: 79px;
+        height: 79px;
+        margin: auto 18px auto 40px;
+    }
+    
+    .s7-c2-front h3 { 
+        font-size: 20px;
+        margin: auto 0 auto 0;
+    }
+    
+    .s7-c3-front-img {
+        width: 68px;
+        height: 68px;
+        margin: auto 29px auto 40px;
+    }
+    
+    .s7-c3-front h3 { 
+        font-size: 20px;
+        margin: auto 0 auto 0;
+    }
+    
+    .s7-c4-front-img {
+        width: 68px;
+        height: 68px;
+        margin: auto 29px auto 40px;
+    }
+    
+    .s7-c4-front h3 { 
+        font-size: 20px;
+        margin: auto 0 auto 0;
+    }
+    .card-back {
+        display: none;
+    }
+    .card-wrap:hover .card-front {
+        transform: none; 
+        opacity: 1;
+      }
+}

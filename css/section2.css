@@ -1,0 +1,153 @@
+/*==기본폰트설정 
+    font-family: 'Pretendard', sans-serif;
+    font-weight: 700; *700=bold
+으로 해뒀음.
+나머지 서체에 대해서만 font설정하면됨 ==*/
+
+.s2-wrap h2 {
+    font-size: 45px;
+    padding-top: 13.4021vh; 
+    margin-left: 50px; 
+}
+.s2-contents-wrap {
+    margin: 5.9794vh auto 0 auto; /* 58px 0 0 156px; */
+    max-width: 850px; 
+    height: 564px;
+    position: relative;
+}
+
+.s2-c1-img {
+    width: 358px; /*358px 그림자때문에 크기 늘림*/
+    height: 424px;
+    position:absolute;
+    background-image: url(../images/section2-img1.svg);
+    background-size:cover;
+    background-repeat: no-repeat;
+}
+
+.s2-c1-txt {
+    position:absolute;
+    right: 0;   
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41px;
+    color: #000000;
+}
+
+.s2-c2-txt {
+    position:absolute;
+    top: 469px; 
+    left: 96px; 
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 41px; /*172.2%*/
+    color: #000000;
+}
+
+
+.s2-c2-img {
+    position:absolute;
+    width: 226px; 
+    height: 411px;
+    right:0;
+    bottom: 0;
+    filter: drop-shadow(10px 10px 10px rgba(0, 0, 0, 0.25));
+    background-image: url(../images/section2-img2.png);
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+/*=============================*/
+@media (max-width: 1070px) {
+    .s2-contents-wrap {
+    margin: 58px auto 0 auto; 
+   
+}
+}
+
+@media (min-width: 768px) and (max-width:1023px) {
+    .s2-wrap h2 {
+        font-size: 35px;
+        padding-top: 150px; /* 150px margin으로 설정하면 wrap가 전체적으로 밀림ㅠ */ 
+        margin-left: 7.8125%; /* 60px */
+    }
+    .s2-contents-wrap {
+        margin: 59px auto 0 auto; 
+        width: 576px; 
+        height: 486px;
+    }
+    .s2-c1-img {
+        width: 263px;
+        height: 309px;
+        position:absolute;
+        background-image: url(../images/section2-img1.svg);
+    }
+
+    .s2-c1-txt {
+        top: 16px; 
+        left: 288px; 
+        font-size: 18px;
+        line-height: 31px;
+    }
+
+    .s2-c2-txt {
+        top: 424px; 
+        left: 36px; 
+        font-weight: 400;
+        font-size: 18px;
+        line-height: 31px; /*172.2%*/
+    }
+    
+    .s2-c2-img {
+        width: 169px;
+        height: 307px;
+    }
+}
+
+@media (max-width:767px) {
+    .s2-wrap h2 {
+        font-size: 25px;
+        padding-top: 110px; /* 110px margin으로 설정하면 wrap가 전체적으로 밀림ㅠ */ 
+        margin-left: 9.3457%; /* 40px */
+    }
+   
+    .s2-contents-wrap {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px auto 0 auto; /* 50px 0 0 80px;*/
+        width: 279px; 
+        height: 654px;
+    }
+
+    .s2-c1-img {
+        width: 201px;
+        height: 189px;
+        margin: 0 0 0 57px; /* 34px */
+        position:static;
+        background-size: contain;
+    }
+
+    .s2-c1-txt {
+        font-size: 16px;
+        line-height: 24px;
+        position: static;
+    }
+
+    .s2-c2-txt {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px; 
+        width: 279px;
+        height: 48px;
+        position: static;
+    }
+    
+    .s2-c2-img {
+        width: 104px;
+        height: 189px;
+        margin: 0 auto;
+        position: static;
+    }
+}
